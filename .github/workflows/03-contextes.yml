@@ -1,0 +1,28 @@
+name: Contextes
+
+on:
+  push:
+    branches: [main, 'feature/**']
+  pull_request:
+    branches: [main]
+
+env:
+  APP_NAME: fastapi-starter
+
+jobs:
+  display-contexts:
+    name: Affichage des Contextes
+    runs-on: ubuntu-latest
+    steps:
+      - name: Afficher les informations de contexte (Q8)
+        run: |
+          echo "Nom de l'application : ${{ env.APP_NAME }}"
+          echo "Acteur : ${{ github.actor }}"
+          echo "Nom de l'événement : ${{ github.event_name }}"
+          echo "Branche : ${{ github.ref_name }}"
+          echo "SHA du commit : ${{ github.sha }}"
+          echo "OS du runner : ${{ runner.os }}"
+
+      - name: Afficher le contexte github complet au format JSON (Q10)
+        run: |
+          echo '${{ toJson(github) }}'
