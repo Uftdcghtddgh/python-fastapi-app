@@ -65,3 +65,5 @@ A minimal, production‑leaning FastAPI template with testing (coverage), lintin
 - Testing with pytest + pytest-cov (HTML/XML coverage, 85% threshold)
 - Ruff for linting and formatting; optional mypy typing
 - Dockerfile and GitHub Actions CI (Python 3.13)
+
+<!-- Test Q2: Modification du README seul -->
