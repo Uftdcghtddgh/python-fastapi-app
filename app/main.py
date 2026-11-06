@@ -1,3 +1,4 @@
+import sys  # Erreur de lint intentionnelle (Q6: import inutilise)
 from fastapi import FastAPI
 
 from .config import settings
