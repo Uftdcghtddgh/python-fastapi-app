@@ -10,4 +10,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Afficher le tag
-        run: echo "Tag déclenché : $GITHUB_REF"
+        run: |
+          echo "Tag declenche: $GITHUB_REF"
