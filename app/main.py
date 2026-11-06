@@ -16,3 +16,5 @@ def root():
 @app.get("/health")
 def health():
     return {"ok": True}
+
+# Test Q2: Modification dans app/ pour declencher le filtre paths
